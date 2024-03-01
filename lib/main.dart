@@ -135,8 +135,7 @@ class _HomePageState extends State<HomePage> {
         body: _items.isEmpty ? const Center(child: Text('No Items',
           style: TextStyle(fontSize: 30),
         ),
-        )
-            : ListView.builder(
+        ) : ListView.builder(
           itemCount: _items.length,
           itemBuilder: (context, index) {
             final currentItem = _items[index];
